@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  font-family: "Lobster", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.conversion-area {
+  color: green;
+  width: 800px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+label {
+  display: block;
+  font-size: 20px;
+}
+input,
+select {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+.arrows {
+  position: relative;
+  top: 10px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.conversion-result {
+  font-size: 24px;
+  width: 630px;
+}
+.conversion-result button {
+  display: block;
+  background-color: rgba(172, 255, 47, 0.473);
+  padding: 5px 10px;
+  color: green;
+  cursor: pointer;
+  border: 1px solid green;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.conversion-result div {
+  color: green;
+}

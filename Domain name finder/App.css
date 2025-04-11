@@ -1,0 +1,103 @@
+/* .App {
+  padding: 50px 100px;
+  text-align: center;
+  align-content: center;
+  margin: 100px auto;
+}
+ */
+ body {
+  background: #0f1228;
+  overflow-x: hidden;
+  color: #e7e9f0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header.css */
+.App .head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.head-container .head-image {
+  width: auto;
+  transition: max-width 1s, min-width 1.5s;
+}
+
+.head-container .head-image-expanded {
+  min-width: 300px;
+  max-width: 280px;
+}
+
+.head-container .head-image-contracted {
+  min-width: 100px;
+  max-width: 120px;
+}
+
+.head-container .head-text {
+  font-family: 'Hachi Maru Pop', cursive;
+  margin: 5px 0 15px 0;
+}
+
+/* NameCard.css */
+.result-name-card {
+  color: #e7e9f0;
+  background: #282d4f;
+  margin: 10px 15px;
+  min-width: 75px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px5pxrgba(255, 255, 255, 0.1);
+  transition: background 0.35s;
+  display: flex;
+  justify-content: center;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.result-name-card:hover {
+  background: #4a5079;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.result-name {
+  margin: 0;
+  font-weight: 100;
+}
+
+/* ResultContainer.css */
+.results-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+}
+
+/* SearchBox.css */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.App .search-input {
+  padding: 18px 25px;
+  font-size: 25px;
+  width: 350px;
+  border-width: 0;
+  background: #a592f2;
+  color: #e7e9f0;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.search-input::placeholder {
+  color: #e7e9f0;
+}
+
+.search-input:focus {
+  outline: navy;
+}

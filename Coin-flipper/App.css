@@ -1,0 +1,23 @@
+.App {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    padding: 50px 25px;
+  }
+  .App img{
+    width: 200px;
+    height: 200px
+  }
+  .App button{
+    display: block;
+    margin: 5px auto;
+    border: none;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  .App h5 span{
+    color: blue;
+  }

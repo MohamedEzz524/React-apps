@@ -1,0 +1,73 @@
+body{
+  background-color: #F6F0F0;
+ }
+ .App {
+  width: 600px;
+  text-align: center;
+  align-content: center;
+  margin: 100px auto;
+  padding:10px;
+  background-color: #F2E2B1;
+  
+}
+
+.App input{
+  width: 100%;
+  border: 1px solid #ddd;
+  outline-color: #999;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+button.add{
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius:7px ;
+  margin:10px 0;
+}
+.App button:hover{
+  opacity: 0.8;
+}
+
+.task{
+display: flex;
+justify-content: space-between;
+width: 100%;
+background-color: #ccc;
+padding: 10px;
+border-bottom: 1px solid #f6f6f6;
+border-radius: 2px;
+}
+.task .btn{
+  padding: 5px 10px ;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.task .delete{
+  background-color: red;
+  color: white;
+}
+.task .edit{
+  background-color: #000;
+  color: white;
+}
+.stats{
+  margin-top: 5px;
+  color: #BDB395;
+}
+.stats span{
+  padding: 2px ;
+  background-color: #F6F0F0;
+  border-radius: 50%;
+}
+.complete{
+  text-decoration: line-through;
+}

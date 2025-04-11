@@ -1,0 +1,23 @@
+/* .App {
+  padding: 50px 100px;
+  text-align: center;
+  align-content: center;
+  margin: 100px auto;
+}
+ */
+ *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  }
+  .Color-Box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    }
+  .box{
+    width: 20%;
+    height: 25vh;
+    align-content: center;
+    cursor: pointer;
+  }

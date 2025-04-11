@@ -1,0 +1,35 @@
+.App {
+    background-color: #27391C;
+    border-radius: 3px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    margin-top: 100px;
+  }
+  
+  
+  .App h1{
+    color: #1F7D53;
+  }
+  .App button{
+    color: #fff;
+    background-color: #255F38;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right:5px ;
+  }
+  .App button:hover{
+    opacity: 0.9;
+  }
+  .App div{
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .App .score{
+    font-size: 24px;
+  }

@@ -1,0 +1,45 @@
+export default function App() {
+
+    const [state,setState] = useState({
+        headerTitle:"Just Name It!!",
+        headerExpanded:true,
+        suggestedNames: []
+      })
+    
+      const onInputChange = (inputText) =>{
+        setState({headerExpanded: !(inputText.length>0),suggestedNames: (inputText.length>0) ? name(inputText) : []})
+      }
+      
+      const name = require('@rstacruz/startup-name-generator'); //generator "Important"
+
+      const nameCheapUrl = "https://www.namecheap.com/domains/registration/results/?domain=";  // important
+
+  return (
+        <div className='App'>
+            <div className="head-container">
+                <img style={{width:"200px",height:"200px"}} className="head-image" src='https://th.bing.com/th/id/R.59feccb670335030ac95d30d7fa6f8fb?rik=d6Jw%2bqXHpk4ZnQ&riu=http%3a%2f%2fwww.thegoldenscope.com%2fwp-content%2fuploads%2f2014%2f10%2fcopertina.jpg&ehk=UFwuHnrZ09uo%2bzLfTCRmpDTmFgwPQrkOyCnEYVUGD04%3d&risl=&pid=ImgRaw&r=0' alt='img'/>
+                <h1 className="head-text">{state.headerTitle}</h1>
+            </div>
+            <div className="search-container">
+                <input onChange={(e) => onInputChange(e.target.value)} 
+                placeholder="Type keywords" className="search-input" />
+            </div>
+            <div className='results-container'>
+                {state.suggestedNames.map((suggestedName)=>{
+                return (
+                <div>
+                    <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="card-link" href={`${nameCheapUrl}${suggestedName}`}>
+                        <div className="result-name-card">
+                        <p className="result-name">{suggestedName}</p>
+                        </div>
+                    </a>
+                </div>)
+                })}
+            </div>
+        </div>
+        )
+}
+

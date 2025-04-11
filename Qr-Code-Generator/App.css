@@ -1,0 +1,64 @@
+@import url('http://fonts.cdnfonts.com/css/lilly');
+
+body{
+  font-family: 'Lilly', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 700px;
+  padding: 50px;
+  background-color: #EABDE6;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.App label{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.App button{
+  border: none;
+  border-radius:5px ;
+  background-color: green;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.App button:hover{
+  opacity: 0.9;
+}
+
+.App input[type='text']{
+  margin: 20px 5px;
+  width: 70%;
+  padding: 5px;
+  border: 1px solid #EEF1DA;
+  border-radius: 3px;
+  font-size: 16px;
+  outline-color:#C7D9DD ;
+}
+
+.App input:not([type='text']){
+  margin:0 7px;
+  accent-color: green;
+}
+
+/* section 2 qrCode */
+.output-box{
+  margin-top: 50px;
+}
+.output-box button{
+  display: block;
+  margin: auto;
+}
